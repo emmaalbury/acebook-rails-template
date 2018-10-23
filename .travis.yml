@@ -1,6 +1,6 @@
 language: ruby
 rvm:
- - 2.5.1
+ - 2.5.0
  - jruby
  - 9.2.0.0
 cache:
