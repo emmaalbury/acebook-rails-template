@@ -1,14 +1,11 @@
 language: ruby
 rvm:
  - 2.5.1
- - jruby
- - 9.2.0.0
 cache:
 - bundler
 before_script:
-- bundle install
-- bundle exec rails db:create
-- bundle exec rails db:migrate
+- bundle exec rake db:create
+- bundle exec rake db:migrate
 deploy:
   provider: heroku
   api_key:
@@ -16,5 +13,3 @@ deploy:
   app: mighty-ravine-56690
   on:
     repo: emmaalbury/Team-Tela
-services:
-  - postgresql
