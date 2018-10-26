@@ -8,8 +8,10 @@
     New posts
   <% end %>
 
-  <% @posts.each do |post| %>
+<% @posts.each do |post| %>
+  <p><%=post.created_at.strftime("%H:%M %F") %></p>
   <p><%= simple_format(post.message) %></p>
+<% end %>
 
   <% end %>
 <% else %>
