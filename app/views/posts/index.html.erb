@@ -1,8 +1,19 @@
-<% @posts.each do |post| %>
+<p class="navbar-text pull-right">
+  <% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <br>
+  <%= link_to new_post_path do %>
+    New posts
+  <% end %>
+
+  <% @posts.each do |post| %>
   <p><%= simple_format(post.message) %></p>
 
+  <% end %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
-
-<%= link_to new_post_path do %>
-  New post
-<% end %>
+</p>
