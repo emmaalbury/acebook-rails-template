@@ -4,13 +4,42 @@
     <title>Acebook</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="assets/stylesheets/application.css">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
+    <nav role="navigation">
+      <div class="nav-container">
+        <div class="navbar-header">
+          <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> -->
+            <%# <span class="sr-only">Toggle navigation</span> %>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          <!-- </button> -->
+        <a class="logo" href="/">TelaTalk</a>
+        </div>
+      <div class="nav-bar">
+      <ul class="nav navbar-nav">
+        <% if user_signed_in? %>
+          <li> <strong><%= current_user.email %></strong> </li>
+          <li><%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link' %> </li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+          <li><%= link_to "New Post", new_post_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+    <footer>
+      <div class="container">
+        WebNoob <%= Time.now.year %>
+      </div>
+    </footer>
   </body>
 </html>
