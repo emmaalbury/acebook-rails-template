@@ -28,6 +28,14 @@ RSpec.describe PostsController, type: :controller do
       destroyed_post.destroy
       expect(Post.find_by(message: 'Hello, world!')).to be nil
     end
+
+    it 'updates a post' do
+      post :create, params: { post: { message: 'Hello, world!' } }
+      mypost = Post.find_by(message: 'Hello, world!')
+      edit_post = Post.find(mypost.id)
+      edit_post.update(message: 'Hello!')
+      expect(edit_post.message).not_to be("Hello, world!")
+    end
   end
 
   describe 'GET /' do
