@@ -33,6 +33,10 @@ class PostsController < ApplicationController
     end
   end
 
+  def change
+    add_column :post, :likers_count, :integer, :default => 0
+  end
+
   private
 
   def post_params
