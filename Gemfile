@@ -18,6 +18,7 @@ gem 'rails', '~> 5.1.1'
 # Use postgresql as the database for Active Record
 gem 'simplecov'
 gem 'simplecov-console'
+gem 'socialization'
 gem 'travis'
 # use travis for tests
 gem 'pg'
