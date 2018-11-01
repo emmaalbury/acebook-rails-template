@@ -1,0 +1,16 @@
+form#new_post {
+  width: 100%;
+}
+
+textarea#post_message {
+  width: 80%;
+  height: 300px;
+  margin: 5%;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0px 26px 32px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 26px 32px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 26px 32px 2px rgba(0,0,0,0.75);
+  outline: none;
+}

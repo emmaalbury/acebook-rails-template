@@ -1,8 +1,12 @@
-<%= form_for @post do |form| %>
-  <%= form.label :message %>
-  <%= form.text_area :message %>
+<div class="form">
 
-  <%= form.submit "Edit" %>
-<% end %>
+  <%= form_for @post do |form| %>
+    <%= form.label :message %>
+    <%= form.text_area :message %>
 
-<%= link_to "Back", post_path(@post) %>
+    <%= form.submit "Edit" %>
+  <% end %>
+
+  <%= link_to "Back", post_path(@post) %>
+
+</div>

@@ -1,11 +1,11 @@
 
-<p class="navbar-text pull-right">
+<p class="navbar">
 <% if user_signed_in? %>
 
   <br>
-  <ul>
+  <ul >
     <% @posts.each do |post| %>
-      <li>
+      <li class="navbar-item" >
         <p><%=post.created_at.strftime("%H:%M %F") %></p>
         <p><%= simple_format(post.message) %></p>
         <%= link_to "Delete", post_path(post), method: :delete,
@@ -16,9 +16,8 @@
       </li>
     <% end %>
   </ul>
-  </br>
 <% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'btn-sign'  %> 
+  <%= link_to "Login", new_user_session_path, :class => 'btn-sign'  %>
 <% end %>
 </p>
