@@ -1,6 +1,15 @@
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
+
+  def index
+    @posts = Post.all.order('created_at DESC')
+  end
+
+  def show
+    @post = Post.find(params[:id])
+  end
+
   def new
     @post = Post.new
   end
@@ -12,10 +21,6 @@ class PostsController < ApplicationController
   def create
     @post = Post.create(post_params)
     redirect_to posts_url
-  end
-
-  def index
-    @posts = Post.all.order('created_at DESC')
   end
 
   def destroy
@@ -35,6 +40,13 @@ class PostsController < ApplicationController
 
   def change
     add_column :post, :likers_count, :integer, :default => 0
+  end
+
+  def likes
+    @user = current_user
+    @post = Post.find(params[:id])
+    @user.like!(@post)
+    redirect_to posts_url, notice: "liked!"
   end
 
   private
