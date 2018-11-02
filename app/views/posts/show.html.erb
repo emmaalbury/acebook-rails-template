@@ -1,0 +1,5 @@
+<p>
+<%= @post.message %>
+<%= link_to "Like", like_post_path(@post),
+:method => :post, :class => 'btn btn-primary btn-xs' %>
+</p>
