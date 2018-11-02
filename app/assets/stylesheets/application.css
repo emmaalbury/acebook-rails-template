@@ -35,6 +35,10 @@
    background-color: white;
  }
 
+ .like {
+   background-color: red;
+ }
+
  .nav {
    padding: 0px;
    display: flex;

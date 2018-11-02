@@ -46,7 +46,7 @@ class PostsController < ApplicationController
     @user = current_user
     @post = Post.find(params[:id])
     @user.like!(@post)
-    redirect_to :back, notice: "Liked!"
+    redirect_to posts_url, notice: "liked!"
   end
 
   private

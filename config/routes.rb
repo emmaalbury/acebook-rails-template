@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # resources :posts
   root to: 'posts#index'
   resources :posts, :users
+  get 'post/:id/likes', to: 'posts#likes', as: :likes
 end
