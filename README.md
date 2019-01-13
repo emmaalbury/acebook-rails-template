@@ -6,6 +6,10 @@ Link to the app in production: https://team-tela.herokuapp.com/
 
 You can find the engineering project outline here: https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
 
+## Development ##
+
+This project was created in two weeks with a team of four members using an agile development process.
+
 The card wall is here: https://trello.com/b/bwJN79eJ/team-tela
 
 Shared learning documentation: https://github.com/emmaalbury/Team-Tela/wiki/A-record-of-progress
@@ -17,7 +21,7 @@ Build status of continuous integration using Travis CI passing.
 
 https://travis-ci.org/emmaalbury/Team-Tela/builds/447909112
 
-## Instructions: ##
+## Instructions for running the program: ##
 
   Clone this repository https://github.com/emmaalbury/Team-Tela
   
@@ -37,10 +41,7 @@ Start the server at localhost:3000
 > bin/rails server
 ```
 
-## How to contribute to this project ##
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Tech/framework used: ##
+## Tech and frameworks used: ##
 
 Rails,
 Devise,
@@ -49,6 +50,9 @@ Heroku,
 AWS,
 Rubocop,
 Simplecov.
+
+## How to contribute to this project ##
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## User Stories: ##
 
