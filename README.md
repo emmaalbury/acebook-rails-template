@@ -1,22 +1,22 @@
-Project Title: Tela
+# Tela
 
-A link to the app in production: https://team-tela.herokuapp.com/
+A social media platform allowing user to sign up, sign in, post, like and comment on user content.
 
-Build status:
+Link to the app in production: https://team-tela.herokuapp.com/
+
+## Build status: ##
 Build status of continuous integration using Travis CI passing.
+
 https://travis-ci.org/emmaalbury/Team-Tela/builds/447909112
 
-REQUIRED INSTRUCTIONS:
+## INSTRUCTIONS: ##
 
 1. Fork this repository to `acebook-teamname` and customize
 the below**
 
 [You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
 
-2. The card wall is here: https://trello.com/b/bwJN79eJ/team-tela
-   Shared learning documentation: https://github.com/emmaalbury/Team-Tela/wiki/A-record-of-progress
-
-3. Quickstart
+2. Quickstart
 
 First, clone this repository. https://github.com/emmaalbury/Team-Tela
 Then enter in the command line:
@@ -34,11 +34,13 @@ Server:
 Start the server at localhost:3000
 > bin/rails server
 ```
+3. The card wall is here: https://trello.com/b/bwJN79eJ/team-tela
+Shared learning documentation: https://github.com/emmaalbury/Team-Tela/wiki/A-record-of-progress
 
-## How to contribute to this project
+## How to contribute to this project ##
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-Tech/framework used:
+## Tech/framework used: ##
 
 Rails
 Devise
@@ -48,7 +50,7 @@ AWS
 Rubocop
 Simplecov
 
-User Stories:
+## User Stories: ##
 
 As a user,
 I can sign up securely
