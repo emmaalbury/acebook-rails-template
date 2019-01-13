@@ -28,6 +28,7 @@ https://travis-ci.org/emmaalbury/Team-Tela/builds/447909112
   Then enter in the command line:
 
 ```bash
+> brew install postgres
 > bundle install
 > bin/rails db:create
 > bin/rails db:migrate
