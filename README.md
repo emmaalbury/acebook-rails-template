@@ -1,10 +1,12 @@
 # Tela
 
+<a href="https://codeclimate.com/github/emmaalbury/Team-Tela/maintainability"><img src="https://api.codeclimate.com/v1/badges/23c27119758c8d0e5ffb/maintainability" /></a>
+
 A social media platform allowing users to sign up, sign in, post, like and comment on user content.
 
 Link to the app in production: https://team-tela.herokuapp.com/
 
-You can find the engineering project outline here: https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
+You can find the engineering project outline here: https://github.com/makersacademy/course/tree/master/engineering_projects/rails
 
 ## Development ##
 
