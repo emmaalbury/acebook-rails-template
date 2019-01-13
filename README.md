@@ -30,6 +30,7 @@ https://travis-ci.org/emmaalbury/Team-Tela/builds/447909112
 ```bash
 > brew install postgres
 > bundle install
+> brew services start postgresql
 > bin/rails db:create
 > bin/rails db:migrate
 
